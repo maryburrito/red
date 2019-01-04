@@ -1,28 +1,13 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <style>
-    </style>
-</head>
+{% extends "base.html" %}
+{% block pagetitle %}Stigma{% endblock %}
+{% block subtitle %}Why we need to talk about periods{% endblock %}
+{% block main %}
 
-<body>
-        <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1 class="display-4">Stigma</h1>
-                  <p class="lead">Why we need to Talk About Periods</p>
-                </div>
-              </div>
-<article class="mainbodystuff">
-    <div class="miniintro">
+<div class="miniintro">
        <p> Menstruation is stigmatized by society. 
          This stigma needs to ended. By understanding what stigma is and how we see it in society everyday, we can find the best ways to help destigmatize the period.
          </p>
-    </div>
+        </div>
 
     <div class="stigmabasics">
       <p class="question">What is stigma and how is present with menstruation? </p>
@@ -35,6 +20,7 @@
           Menstruators can’t ask others for a period product if they get their period in public. 
           Alternative phrases like “that time of the month” or “Auntie Flo” are used to not directly say menstruation because it is seen as too taboo. 
           <br>
+          <br>
         All of these examples of stigma, and countless more not mentioned, are not simply annoying, they are harmful. 
         By not talking about menstruation we are creating a world where menstruators feel shameful and confused. When we don’t do are part to create a conversation about menstruation, young menstruators get their periods for the first time and are deathly afraid. 
         They think they are dying, they did something wrong, or it is a punishment. Even after the fear of the first period subsides, menstruation stigma continues to harm menstruators. 
@@ -46,15 +32,11 @@
     <div class="talk">
       <p class="question">What is the solution to this harmful stigma? Talking.</p>
         <p class="normaltext">
-            Yes, it may seem simple, it may seem small or ineffective, but in reality. talking is powerful.
+            Yes, it may seem simple, it may seem small or ineffective, but in reality, talking is powerful.
              Stigma creates a lack of conversation or discussion about menstruation, so by talking about menstruation, we are helping break the stigma. 
              Talking about menstruation does not mean that you must constantly let everyone know when you’re on your period. Nor does it mean that you need to suddenly become a complete period activist. 
              You don’t need to step on a pedestal to talk. You talking about periods can be small. It can be simple and in everyday conversations.. It could be sharing a story about your period. It could be educating people about periods and correcting misconceptions others may have. 
-            It could be talking to your school to get them to provide free menstrual products in the bathrooms. 
+            It could be talking to your school to get them to provide free menstrual products in the bathrooms. It could be donating to or volunterring for a period charity. It could be educating yourself about menstruation. It could be countless things, but in the end the one goal is to end the stigma and make periods better for everyone.
         </p>
     </div>
-
-</article>
-    
-</body>
-</html>
+    {% endblock %}
