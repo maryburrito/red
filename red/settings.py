@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+VIRTUAL_HOST = os.environ.get("VIRTUAL_HOST")
+VIRTUAL_HOST_NAMES = [vh for vh in VIRTUAL_HOST.split(",") if vh.strip != ""]
+if len(VIRTUAL_HOST_NAMES) > 0:
+  ALLOWED_HOSTS = VIRTUAL_HOST_NAMES
 
 # Application definition
 
