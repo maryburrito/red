@@ -44,8 +44,7 @@ jobs:
             echo ${DOCKER_REGISTRY}
             echo ${DOCKER_IMAGE_NAME}
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              login="$(docker login -u ${REGISTRY_USERNAME} -p ${REGISTRY_PASSWORD})"
-              ${login}
+              docker login -u ${REGISTRY_USERNAME} -p ${REGISTRY_PASSWORD}
               docker tag app "${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:${CIRCLE_SHA1}"
               docker push "${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:${CIRCLE_SHA1}"
             fi
