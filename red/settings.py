@@ -32,6 +32,9 @@ VIRTUAL_HOST_NAMES = [vh for vh in VIRTUAL_HOST.split(",") if vh.strip != ""]
 if len(VIRTUAL_HOST_NAMES) > 0:
   ALLOWED_HOSTS = VIRTUAL_HOST_NAMES
 
+if DEBUG:
+  ALLOWED_HOSTS = ["*"]
+
 # Application definition
 
 
