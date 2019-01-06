@@ -39,6 +39,7 @@ jobs:
             - /caches/app.tar
       - deploy:
           name: Push application Docker image
+          context: Main
           command: |
             echo ${DOCKER_REGISTRY}
             echo ${DOCKER_IMAGE_NAME}
