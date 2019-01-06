@@ -14,11 +14,11 @@ jobs:
               py-pip
             pip install \
               docker-compose
-      - restore_cache:
-          keys:
-            - v1-{{ .Branch }}
-          paths:
-            - /caches/app.tar
+#      - restore_cache:
+#          keys:
+#            - v1-{{ .Branch }}
+#          paths:
+#            - /caches/app.tar
       - run:
           name: Load Docker image layer cache
           command: |
@@ -33,10 +33,10 @@ jobs:
           command: |
             mkdir -p /caches
             docker save -o /caches/app.tar app
-      - save_cache:
-          key: v1-{{ .Branch }}-{{ epoch }}
-          paths:
-            - /caches/app.tar
+ #     - save_cache:
+ #         key: v1-{{ .Branch }}-{{ epoch }}
+ #         paths:
+ #           - /caches/app.tar
       - deploy:
           name: Push application Docker image
           context: Main
