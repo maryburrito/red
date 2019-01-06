@@ -37,6 +37,11 @@ jobs:
           key: v1-{{ .Branch }}-{{ epoch }}
           paths:
             - /caches/app.tar
+      - echo_config:
+          name: Echo some env-vars for debugging
+          command: |
+            echo ${DOCKER_REGISTRY}
+            echo ${DOCKER_IMAGE_NAME}
       - deploy:
           name: Push application Docker image
           command: |
