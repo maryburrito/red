@@ -45,9 +45,11 @@ jobs:
             echo "Docker Image Name: ${DOCKER_IMAGE_NAME}"
             echo "Circle SHA1: ${CIRCLE_SHA1}"
             echo "Circle Branch: ${CIRCLE_BRANCH}"
+            COMMAND="cd /root/talkaboutperiods.com/ && ./update.sh ${CIRCLE_SHA1}"
+            echo "Command: ${COMMAND}"
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               docker login -u ${REGISTRY_USERNAME} -p ${REGISTRY_PASSWORD}
               docker tag app "${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:${CIRCLE_SHA1}"
               docker push "${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:${CIRCLE_SHA1}"
-              ssh -q -o "StrictHostKeyChecking no" -l root ocelot9.com 'cd /root/talkaboutperiods.com/ && ./update.sh ${CIRCLE_SHA1}'
+              eval "ssh -o 'StrictHostKeyChecking no' -l root ocelot9.com \"${COMMAND}\""
             fi
