@@ -37,14 +37,11 @@ jobs:
           key: v1-{{ .Branch }}-{{ epoch }}
           paths:
             - /caches/app.tar
-      - echo_config:
-          name: Echo some env-vars for debugging
-          command: |
-            echo ${DOCKER_REGISTRY}
-            echo ${DOCKER_IMAGE_NAME}
       - deploy:
           name: Push application Docker image
           command: |
+            echo ${DOCKER_REGISTRY}
+            echo ${DOCKER_IMAGE_NAME}
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               login="$(docker login -u ${REGISTRY_USERNAME} -p ${REGISTRY_PASSWORD})"
               ${login}
