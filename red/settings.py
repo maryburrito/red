@@ -25,7 +25,7 @@ SECRET_KEY = '$o#k)eq@0_t+u%s)gnwu5yfpjezymj+mz)xkhg%pk#bo+=w*&h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-if os.environ.get("DJANGO_ENV", "") == "production"
+if os.environ.get("DJANGO_ENV", "") == "production":
   DEBUG = False
 
 ALLOWED_HOSTS = []
