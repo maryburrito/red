@@ -15,4 +15,5 @@ urlpatterns = [
      path('menstruation/extratips', TemplateView.as_view(template_name="menstruation/subpages/extratips.html"), name='menstruation_extratips'),
       path('menstruation/products', TemplateView.as_view(template_name="menstruation/subpages/products.html"), name='menstruation_products'),
        path('menstruation/professionals', TemplateView.as_view(template_name="menstruation/subpages/professionals.html"), name='menstruation_professionals'),
+       path('home', TemplateView.as_view(template_name="home.html"), name='home'),
 ]
