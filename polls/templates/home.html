@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% block title %}Talk About Periods{% endblock %}
 {% block pagetitle %}Talk About Periods With Us{% endblock %}
 {% block subtitle %}We're ending the stigma around periods one conversation at a time. And we need you to help!{% endblock %}
 {% block main %}
@@ -22,14 +23,14 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{% static "abstract-red-edit.jpg" %}" class="d-block w-100" alt="Melting Red Popsical">
+      <img src="{% static "abstract-red-edit.jpg" %}" class="d-block w-100" alt="A shiny red background">
       <div class="carousel-caption d-none d-md-block">
         <h5 class="home-carousel-intro">Get Your Questions About Menstruation Answered</h5>
         <p><a class="btn btn-lg btn-primary" href="{% url 'menstruation_basics' %}" role="button">Go</a></p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{% static "red-wood-edit3.jpg" %}" class="d-block w-100" alt="...">
+      <img src="{% static "red-wood-edit3.jpg" %}" class="d-block w-100" alt="Wood painted red">
       <div class="carousel-caption d-none d-md-block">
         <h5 class="home-carousel-intro">Learn about some of the obstacles facing menstruators today</h5>
         <p><a class="btn btn-lg btn-primary" href="{% url 'obstacles' %}" role="button">Learn</a></p>
@@ -44,6 +45,23 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container home-second">
+    <div class="row justify-content-center">
+    <div class="col-md-10">
+      <card class="card text-white bg-dark mb-3>
+<div class="card-home">
+    <div class="card-body">
+      <h5 class="card-title">Find the best period product for you</h5>
+      <p class="card-text">Learn about the basics and pros and cons of a variety of menstruation options.</p>
+      <a href="{% url 'menstruation_products' %}" class="btn btn-light">Explore</a>
+    </div>
+  </div>
+  </card>
 </div>
 </div>
 </div>
