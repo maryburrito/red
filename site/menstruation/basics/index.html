@@ -1,0 +1,395 @@
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Basics - Talk About Periods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #FFFFFF;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .display-4 {
+            color: #fff;
+            font-size: 60px;
+            justify-content: center;
+        }
+    
+        .lead {
+            color: black;
+            font-size: 35px;
+
+        }
+
+        .jumbotron {
+            background-color: #ff4d4d;
+        }
+
+        .intro {
+            color: black;
+            font-size: 18px;
+        }
+        p.b {
+            font-style: italic;
+            font-size: 16px;
+            font-weight: light;}
+
+        .mainpagestuff {
+            margin: 0px 25px 0px 25px;
+        }
+
+        .topicheadings {
+            color: Black;
+            font-size: 20px;
+        }
+
+        .cost {
+            font-style: italic;
+        }
+
+        .procon {
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            
+        }
+        .question {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .intro-text {
+            font-size: 24px;
+            font-weight: 200;
+        }
+
+        .tips-icons {
+            display: flex;
+            justify-content: center;
+            font-size: 100px;
+            color: #0D2C54;
+            margin: 1rem auto 0 auto;
+        }
+
+        .tips-text {
+            align-items: center;
+            margin: auto;
+        }
+
+        .tips-text-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .prof-texr {
+            color: #565555;
+        }
+
+        .proimg {
+            float: right;
+            max-width: 475px;
+        }
+
+        .prod-img-wrapper {
+            justify-content: center;
+        }
+
+        .wrapper {
+  padding: 50px;
+        }
+        
+        .section-heading {
+            display: flex;
+        }
+
+        .section-heading > h5 {
+            display: block;
+            color: #0D2C54;
+        }
+        .section-heading > i {
+            display: block;
+            color: #ff4d4d;
+            font-size: 25px;
+            padding-right: 5px;
+        }
+
+        .obstacles-intro-text {
+            font-size: 24px;
+            font-weight: 200;
+        }
+
+        .about-icon {
+            color: #0D2C54;
+            font-size: 100px;
+        }
+
+        .about-cont {
+            display: flex;
+            justify-content: center;
+        }
+
+        #top-home-intro-carousel {
+           
+        }
+
+        .stigma-title {
+            color: #0D2C54;
+            font-size: 22px;
+            justify-content: center;
+        }
+
+        .main-icon {
+            display: flex;
+            justify-content: center;
+            font-size: 100px;
+            color: #0D2C54;
+        }
+
+        .main-card-title {
+            display: flex;
+            justify-content: center;
+            color: #0D2C54;
+        }
+
+        .main-question {
+    
+        }
+
+        #logo {
+            height: 80px;
+        }
+    
+        .home-carousel-intro {
+            color: white;
+        }
+
+        .pink {
+            color: #ff4d4d;
+        }
+
+        .home-carousel-intro-2 {
+            color: white;
+        }
+
+        .home-second {
+            margin-top: 20px;
+        }
+
+        
+        
+        @media screen and (max-width: 400px) {
+  .display-4 {
+    font-size: 40px;
+  }
+}
+    </style>
+</head>
+
+<body>
+    
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/">
+    <img id="logo" src="/static/logo-cropped.3ba319a98346.png" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="/stigma">Stigma</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="/obstacles">Obstacles</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Menstruation
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item " href="/menstruation">Overview</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item active" href="/menstruation/basics">The Basics</a>
+          <a class="dropdown-item  " href="/menstruation/products">Product Options</a>
+          <a class="dropdown-item " href="/menstruation/professionals">Professionals</a>
+          <a class="dropdown-item " href="/menstruation/extratips">Extra Tips</a>
+        </div>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Menstruation <small>Basics</small></h1>
+            <p class="lead">Learn about the basics, options, professionals, and more</p>
+        </div>
+
+    </div>
+    <article class="mainpagestuff">
+        
+	    
+<!--<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">The Basics</h1>
+          <p class="lead">Learn about what menstruation really is</p>
+        </div>
+    </div>-->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+
+            <div class=" my-3">
+                <div class="row justify-content-center m-3">
+                    <div class="col-md-12">
+                        <h4 class="main-question">What is menstruation? </h4>
+                        <p class="main-answer">
+                            Menstruation is a process that occurs in the body of most people with a uterus and other
+                            reproductive organs usually associated with the female/woman body.
+                            However, it is important to note that not everyone who menstruates necessarily identifies
+                            as female, so we’ll refer to people who experience menstruation as menstruators.
+                            Menstruation is where blood and other small fragments of tissue from the lining of the
+                            uterus are discharged through the vagina every 28 days (or so) from the time the person
+                            reaches puberty until they reach menopause, except for the time when/if they are pregnant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" my-3">
+                <div class="row justify-content-center m-3">
+                    <div class="col-md-12">
+                        <h4 class="main-question">Why does menstruation happen?</h4>
+                        <p class="main-answer">
+                            Menstruation happens as the menstruator’s body prepares for pregnancy each month. The
+                            ovaries release
+                            two chemical messengers or hormones, called estrogen and progesterone.
+                            These two hormones help the body to build up the lining of the uterus. When the uterus is
+                            "built up" it
+                            can accept a fertilized egg and a pregnancy can begin.
+                            If there is not a fertilized egg, the lining of the uterus breaks down and bleeds. This
+                            same process
+                            happens over and over again throughout a menstruator’s lifetime.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" my-3">
+                <div class="row justify-content-center m-3">
+                    <div class="col-md-12">
+                        <h4 class="main-question"> When does menstruation happen?</h4>
+                        <p class="main-answer">
+                            Menstruation happens quite regularly after a few years.
+                            In the beginning a menstruator may not know when to predict their period, but after about
+                            2-3 years a
+                            menstruator’s periods should be quite predictable, usually once every 4-5 weeks. Most
+                            periods last for
+                            about 5 days.
+                            Some are shorter and some are longer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" my-3">
+                <div class="row justify-content-center m-3">
+                    <div class="col-md-12">
+                        <h4 class="main-question">Who does menstruation happen to?</h4>
+                        <p class="main-answer">
+                            Menstruation usually happens to a people with a female anatomy/body about 2 years after
+                            their breasts
+                            begin to develop and about 6 months to a year after they begin to see vaginal discharge
+                            (mucus type
+                            fluid) that they might see or feel in their underwear.
+                            This time period usually occurs sometime during the pre-teenage to teenage years, though it
+                            is
+                            different for each person.
+                    </div>
+                </div>
+            </div>
+
+            <div class=" my-3">
+                <div class="row justify-content-center m-3">
+                    <div class="col-md-12">
+                        <h4 class="main-question">Are menstruation and period the same thing?</h4>
+                        <p class="main-answer">
+                            Yes. Menstruation and period are the same thing.
+                    </div>
+                </div>
+            </div>
+
+            <div class=" my-3">
+                <div class="row justify-content-center m-3">
+                    <div class="col-md-12">
+                        <h4 class="main-question">Does menstruation hurt?</h4>
+                        <p class="main-answer">
+                            Menstruation should not be particularly painful, but it can be uncomfortable. Cramps can
+                            be common with
+                            menstruation, especially during the first few days. You can try a warm heating pad on your
+                            stomach or
+                            taking ibuprofen or naproxen.
+                            If you have severe cramps that do not get better with ibuprofen or naproxen it would be a
+                            good idea to
+                            talk with your doctor.
+                    </div>
+                </div>
+            </div>
+
+            <div class=" my-3">
+                <div class="row justify-content-center m-3">
+                    <div class="col-md-12">
+                        <h4 class="main-question">What is PMS?</h4>
+                        <p class="main-answer">
+                            PMS is short for PreMenstrual Syndrome. It stands for emotional and physical symptoms that
+                            may happen
+                            before or during your period. These symptoms might include anxiety, sadness, moodiness,
+                            bloating, and
+                            acne.
+                            If you have severe PMS and it's difficult to do your everyday activities it would be a good
+                            idea to
+                            talk with your doctor
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+        
+       <!--- <footer class="footer mt-auto py-3">
+                <div class="container">
+                  <span class="text-muted">Talk About Periods</span>
+                    <p>Follow us on <a href="https://twitter.com/talkaboutperio1?lang=en" target="blank">Twitter</a> and <a href="https://www.instagram.com/talkaboutperiods/" target="blank">Instagram</a>
+                    </p>
+                </div>
+              </footer>-->
+
+    </article>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>

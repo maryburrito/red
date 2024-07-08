@@ -1,0 +1,409 @@
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Obstacles - Talk About Periods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #FFFFFF;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .display-4 {
+            color: #fff;
+            font-size: 60px;
+            justify-content: center;
+        }
+    
+        .lead {
+            color: black;
+            font-size: 35px;
+
+        }
+
+        .jumbotron {
+            background-color: #ff4d4d;
+        }
+
+        .intro {
+            color: black;
+            font-size: 18px;
+        }
+        p.b {
+            font-style: italic;
+            font-size: 16px;
+            font-weight: light;}
+
+        .mainpagestuff {
+            margin: 0px 25px 0px 25px;
+        }
+
+        .topicheadings {
+            color: Black;
+            font-size: 20px;
+        }
+
+        .cost {
+            font-style: italic;
+        }
+
+        .procon {
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            
+        }
+        .question {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .intro-text {
+            font-size: 24px;
+            font-weight: 200;
+        }
+
+        .tips-icons {
+            display: flex;
+            justify-content: center;
+            font-size: 100px;
+            color: #0D2C54;
+            margin: 1rem auto 0 auto;
+        }
+
+        .tips-text {
+            align-items: center;
+            margin: auto;
+        }
+
+        .tips-text-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .prof-texr {
+            color: #565555;
+        }
+
+        .proimg {
+            float: right;
+            max-width: 475px;
+        }
+
+        .prod-img-wrapper {
+            justify-content: center;
+        }
+
+        .wrapper {
+  padding: 50px;
+        }
+        
+        .section-heading {
+            display: flex;
+        }
+
+        .section-heading > h5 {
+            display: block;
+            color: #0D2C54;
+        }
+        .section-heading > i {
+            display: block;
+            color: #ff4d4d;
+            font-size: 25px;
+            padding-right: 5px;
+        }
+
+        .obstacles-intro-text {
+            font-size: 24px;
+            font-weight: 200;
+        }
+
+        .about-icon {
+            color: #0D2C54;
+            font-size: 100px;
+        }
+
+        .about-cont {
+            display: flex;
+            justify-content: center;
+        }
+
+        #top-home-intro-carousel {
+           
+        }
+
+        .stigma-title {
+            color: #0D2C54;
+            font-size: 22px;
+            justify-content: center;
+        }
+
+        .main-icon {
+            display: flex;
+            justify-content: center;
+            font-size: 100px;
+            color: #0D2C54;
+        }
+
+        .main-card-title {
+            display: flex;
+            justify-content: center;
+            color: #0D2C54;
+        }
+
+        .main-question {
+    
+        }
+
+        #logo {
+            height: 80px;
+        }
+    
+        .home-carousel-intro {
+            color: white;
+        }
+
+        .pink {
+            color: #ff4d4d;
+        }
+
+        .home-carousel-intro-2 {
+            color: white;
+        }
+
+        .home-second {
+            margin-top: 20px;
+        }
+
+        
+        
+        @media screen and (max-width: 400px) {
+  .display-4 {
+    font-size: 40px;
+  }
+}
+    </style>
+</head>
+
+<body>
+    
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/">
+    <img id="logo" src="/static/logo-cropped.3ba319a98346.png" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="/stigma">Stigma</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/obstacles">Obstacles</a>
+      </li>
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Menstruation
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item " href="/menstruation">Overview</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item " href="/menstruation/basics">The Basics</a>
+          <a class="dropdown-item  " href="/menstruation/products">Product Options</a>
+          <a class="dropdown-item " href="/menstruation/professionals">Professionals</a>
+          <a class="dropdown-item " href="/menstruation/extratips">Extra Tips</a>
+        </div>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Obstacles</h1>
+            <p class="lead">Learn about challenges facing menstruators and how you can help</p>
+        </div>
+
+    </div>
+    <article class="mainpagestuff">
+        
+	    
+<!--<p class="intro">
+    Periods can be difficult to manage for almost every menstruator, but some people face added obstacles that make their periods even harder. 
+    Below is an incomplete overview of some of the obstacles faced by menstruators and information about programs dedicated to removing these obstacles.
+</p>
+<div class="poverty">
+<p class="heading">Poverty</p>
+  <p class="explain">
+      Not everyone can afford periods products every month. This can lead to adolescents missing school, to unsanitary measures, and countless other problems. Every menstruator deserves to have access to period products on their period.
+      Period is an amazing movement and resource seeking to provide period products to those in need. To find more information about this amazing cause and how you can help check out <a href="https://www.period.org/ " target="_blank">https://www.period.org/.</a>
+     Due to the lack of available period products, menstruators across the world are forced to miss school while on their periods. This damages their education as over time, it puts them further and further behind their non-menstruator peers. Days for girls is a cause seeking to provide reusable menstrual products for girls world-wide as well as menstrual education, so they can keep up in school and not miss school because of a normal bodily function.
+     <a href="https://www.daysforgirls.org" target="_blank">https://www.daysforgirls.org</a>
+     Menstruation is also a very difficult time for homeless menstruators who cannot afford access to period products.<a href="https://www.helpingwomenperiod.org" target="_blank">https://www.helpingwomenperiod.org</a> seeks to help donate period products to those in need.             
+  </p>
+</div>
+
+<div class="understanding">
+<p class="heading">Lack of Understanding</p>
+<p class="explain">
+    A major obstacle facing many menstruators is a lack of understanding, either the menstruators themselves not understanding menstruation or harmful misconceptions of others concerning menstruation.
+ Many young menstruators across the world are not taught about menstruation, so when their periods first come they are terrified. Many menstruators are briefly told what a period is by a family member or adult and then told to never talk about it again. Many menstruators get their information from misinformed friends with perpetuates misconceptions surrounding periods. 
+Many non-menstruators have a lack of understanding about menstruation, which can cause them to unknowingly be harmful to menstruators or spread misinformation. Most of the time, it is not people’s fault, they just haven’t been properly educated.
+Miseducation is why programs in school and other areas are vital. At home, it is important that parents have conversations with their kids, both menstruators and non-menstrators, so that children can accurately learn about menstruation.
+
+</p>
+</div>
+
+<div class="TNB">
+<p class="heading">Transgender & Non-Binary Community</p>
+<p class="explain">
+    Periods are not something that only affect women. Some transgender men and non-binary people also experience menstruation. They face added stigmas and obstacles.The best way to learn about their experiences and how to best support them, is from the people themselves. 
+    Here are some resources and articles written by transgender men and non-binary people themselves-
+    <a href="https://www.instagram.com/theperiodprince/Cass" target="_blank"> Cass Bliss</a>
+    <a href="https://www.instagram.com/tonithetampon/?hl=en" target="_blank">https://www.instagram.com/tonithetampon/?hl=en</a>
+    <a href="https://www.self.com/story/male-period-trans-model-kenny-jones" target="_blank">https://www.self.com/story/male-period-trans-model-kenny-jones</a>
+    <a href="https://everydayfeminism.com/2014/11/trans-guys-guide-menstruation/" target="_blank">https://everydayfeminism.com/2014/11/trans-guys-guide-menstruation/</a>
+  Instead of using terms like women or females when talking about menstruation, try to be more inclusive by using the term ‘menstruator’ - not all menstruators are female, nor are all females menstruators.        
+</p>
+</div>
+
+<div class="tax">
+<p class="heading">"The Tampon Tax"</p>
+<p class="explain">
+    The tampon tax is a tax in some states that regards feminine products as non-necessities thus making them subject to a value added tax Some states have taken the initiative and repealed the tax, but it still exist in the majority of US states. States are making money by taxing feminine hygiene product, when they are a necessity.  This needs to end. Feminine products are a necessity and should not be taxed as a luxury. 
+    The tax increases the price on these products and makes affording monthly period supplies even harder for more people. The government is making money of a monthly need in some point in the life of about half the population. 
+    <a href="https://www.freethetampons.org/tampon-tax.html" target="_blank">Free the tampons</a>has great information on the tampon tax as well advocating for free menstruation products in public restrooms. 
+</p>
+</div>-->
+<div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="m-3 obstacles-intro-text">Periods can be difficult to manage for almost every menstruator, but some people face added obstacles that make their periods even harder. 
+                        Below is an incomplete overview of some of the challenges faced by menstruators and information about programs and people dedicated to removing these obstacles.</p>
+            
+            </div>
+        </div>
+    
+    </div>
+
+<div class="container">
+    <div class="col-md-12">
+        <div class="card-body">
+                <div class="section-heading">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h5 class="card-title">Poverty</h5>
+                    </div>
+            
+            <p class="card-text">Not everyone can afford periods products every month. This can lead to adolescents
+                missing school, to unsanitary measures, and countless other problems. Every menstruator deserves to
+                have access to period products on their period.
+                <a href="https://www.period.org/ "
+                    target="_blank">Period.</a> is an amazing movement and resource seeking to provide period products to those in need. 
+                Due to the lack of available period products, menstruators across the world are forced to miss school
+                while on their periods. This damages their education as over time, it puts them further and further
+                behind their non-menstruator peers. Days for girls is a cause seeking to provide reusable menstrual
+                products for girls world-wide as well as menstrual education, so they can keep up in school and not
+                miss school because of a normal bodily function.
+                <a href="https://www.daysforgirls.org" target="_blank">Days for Girls</a>
+                Menstruation is also a very difficult time for homeless menstruators who cannot afford access to period
+                products. <a href="https://www.helpingwomenperiod.org" target="_blank">Helping Women Period</a> seeks to
+                help donate period products to those in need.</p>
+        </div>
+
+        <div class="card-body">
+                <div class="section-heading">
+                        <i class="far fa-check-square"></i>
+                        <h5 class="card-title">Lack of Understanding</h5>
+                    </div>
+            
+            <p class="card-text">A major obstacle facing many menstruators is a lack of understanding, either the
+                menstruators themselves not understanding menstruation or harmful misconceptions of others concerning
+                menstruation.
+                Many young menstruators across the world are not taught about menstruation, so when their periods first
+                come they are terrified. Many menstruators are briefly told what a period is by a family member or
+                adult and then told to never talk about it again. Many menstruators get their information from
+                misinformed friends with perpetuates misconceptions surrounding periods.
+                Many non-menstruators have a lack of understanding about menstruation, which can cause them to
+                unknowingly be harmful to menstruators or spread misinformation. Most of the time, it is not people’s
+                fault, they just haven’t been properly educated.
+                Miseducation is why programs in school and other areas are vital. At home, it is important that parents
+                have conversations with their kids, both menstruators and non-menstrators, so that children can
+                accurately learn about menstruation.
+            </p>
+        </div>
+
+        <div class="card-body">
+            <div class="section-heading">
+                <i class="fas fa-transgender-alt"></i>
+                <h5 class="card-title">Transgender & Non-Binary Community</h5>
+            </div>
+            
+            <p class="card-text"> Periods are not something that only affect women. Some transgender men and non-binary
+                people also experience menstruation. They face added stigmas and obstacles.The best way to learn about
+                their experiences and how to best support them, is from the people themselves.
+                Here are some resources and articles written by transgender men and non-binary people themselves:
+            </p>    
+                <ul class="">
+                        <li><a href="https://www.instagram.com/theperiodprince/?hl=en" target="_blank"> Cass Bliss</a></li>
+                        <li><a href="https://www.instagram.com/tonithetampon/?hl=en" target="_blank">Toni the Tampon Instagram</a></li>
+                        <li><a href="https://www.self.com/story/male-period-trans-model-kenny-jones" target="_blank">Trans Model Kenny Jones Talks about Male Periods</a></li>
+                        <li><a href="https://everydayfeminism.com/2014/11/trans-guys-guide-menstruation/" target="_blank">Self's A Trans Guy's Guide to Menstruation</a></li>
+                      </ul>
+        </div>
+
+        <div class="card-body">
+                <div class="section-heading">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h5 class="card-title">The Tampon Tax</h5>
+                    </div>
+            
+            <p class="card-text">The tampon tax is a tax in some states that regards feminine products as
+                non-necessities thus making them subject to a value added tax Some states have taken the initiative and
+                repealed the tax, but it still exist in the majority of US states. States are making money by taxing
+                feminine hygiene product, when they are a necessity. This needs to end. Feminine products are a
+                necessity and should not be taxed as a luxury.
+                The tax increases the price on these products and makes affording monthly period supplies even harder
+                for more people. The government is making money of a monthly need in some point in the life of about
+                half the population.
+                <a href="https://www.freethetampons.org/tampon-tax.html" target="_blank">Free the tampons</a> has great
+                information on the tampon tax as well advocating for free menstruation products in public restrooms.
+            </p>
+        </div>
+    </div>
+</div>
+
+        
+       <!--- <footer class="footer mt-auto py-3">
+                <div class="container">
+                  <span class="text-muted">Talk About Periods</span>
+                    <p>Follow us on <a href="https://twitter.com/talkaboutperio1?lang=en" target="blank">Twitter</a> and <a href="https://www.instagram.com/talkaboutperiods/" target="blank">Instagram</a>
+                    </p>
+                </div>
+              </footer>-->
+
+    </article>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
